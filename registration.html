@@ -1,30 +1,23 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-<head>
     <title>Shyamoli Engineering University.</title> 
     <link rel="shortcut icon" href="favicon.ico">  
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>   
-    <script defer src="assets/fontawesome/js/all.js" async ></script>
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" media="print"
-    onload="this.media='all'">   
-    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css" media="print"
-    onload="this.media='all'">
-    <link id="theme-style" rel="stylesheet" href="assets/css/style.css" media="print"
-    onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
 </head> 
 
 <body class="home-page">
     <div class="wrapper">
         <!-- HEADER --> 
         <div id="header-container"></div>
-
-        
-    
 
         <div class="container mt-5 mb-5">
           <form class="bg-light p-4 m-auto rounded-lg" action="#">
@@ -200,25 +193,25 @@
             </div>
           </form>
         </div>
+
+        <script async>
+            // Vérifie si le contenu du header est en cache
+            const cachedHeader = localStorage.getItem('cachedHeader');
         
-    <script async>
-      // Vérifie si le contenu du header est en cache
-      const cachedHeader = localStorage.getItem('cachedHeader');
-  
-      if (cachedHeader) {
-          // Si le contenu est en cache, l'injecte dans le conteneur
-          document.getElementById('header-container').innerHTML = cachedHeader;
-      } else {
-          // Sinon, charge le contenu du header depuis le serveur
-          fetch('header.html')
-              .then(response => response.text())
-              .then(content => {
-                  document.getElementById('header-container').innerHTML = content;
-                  // Stocke le contenu en cache
-                  localStorage.setItem('cachedHeader', content);
-              });
-      }
-  </script>
-  </body>
+            if (cachedHeader) {
+                // Si le contenu est en cache, l'injecte dans le conteneur
+                document.getElementById('header-container').innerHTML = cachedHeader;
+            } else {
+                // Sinon, charge le contenu du header depuis le serveur
+                fetch('header.html')
+                    .then(response => response.text())
+                    .then(content => {
+                        document.getElementById('header-container').innerHTML = content;
+                        // Stocke le contenu en cache
+                        localStorage.setItem('cachedHeader', content);
+                    });
+            }
+        </script>
+    </div>
 </body>
 </html>
