@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<head>
+    <title>Shyamoli Engineering University.</title> 
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>   
+    <script defer src="assets/fontawesome/js/all.js" async ></script>
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" media="print"
+    onload="this.media='all'">   
+    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css" media="print"
+    onload="this.media='all'">
+    <link id="theme-style" rel="stylesheet" href="assets/css/style.css" media="print"
+    onload="this.media='all'">
+</head> 
+
+<body class="home-page">
+    <div class="wrapper">
+        <!-- HEADER --> 
+        <div id="header-container"></div>
+
+        
+    
+
+        <div class="container mt-5 mb-5">
+          <form class="bg-light p-4 m-auto rounded-lg" action="#">
+            <!-- Champ Prénom -->
+            <div class="form-group row mb-3">
+              <label for="first-name" class="col-lg-2 col-form-label">First Name</label>
+              <div class="col-lg-5">
+                <input type="text" id="first-name" class="form-control rounded-pill" placeholder="First Name" required>
+              </div>
+              <div class="col-lg-4">
+                <p class="text-muted">(max 30 characters a-z and A-Z)</p>
+              </div>
+            </div>
+            
+            <!-- Champ Nom -->
+            <div class="form-group row mb-3">
+              <label for="last-name" class="col-lg-2 col-form-label">Last Name</label>
+              <div class="col-lg-5">
+                <input type="text" id="last-name" class="form-control rounded-pill" placeholder="Last Name" required>
+              </div>
+              <div class="col-lg-4">
+                <p class="text-muted">(max 30 characters a-z and A-Z)</p>
+              </div>
+            </div>
+            
+            <!-- Date de naissance -->
+            <div class="form-group row mb-3">
+              <label for="date-of-birth" class="col-lg-2 col-form-label">Date of Birth</label>
+              <div class="col-lg-5">
+                <input type="date" id="date-of-birth" class="form-control rounded-pill" required>
+              </div>
+            </div>
+            
+            <!-- Email -->
+            <div class="form-group row mb-3">
+              <label for="email" class="col-lg-2 col-form-label">Email ID</label>
+              <div class="col-lg-5">
+                <input type="text" id="email" class="form-control rounded-pill" placeholder="Email ID" required>
+              </div>
+            </div>
+            
+            <!-- Genre -->
+            <div class="form-group row mb-3">
+              <label class="col-lg-2 col-form-label">Gender</label>
+              <div class="col-lg-5">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gender" id="male">
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gender" id="female">
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Adresse -->
+            <div class="form-group row mb-3">
+              <label for="address" class="col-lg-2 col-form-label">Address</label>
+              <div class="col-lg-7">
+                <textarea id="address" class="form-control rounded-lg" rows="5"></textarea>
+              </div>
+            </div>
+            
+            <!-- Code postal, État, Ville, Pays -->
+            <div class="form-group row mb-3">
+              <label for="postal-code" class="col-lg-2 col-form-label">Postal Code</label>
+              <div class="col-lg-5">
+                <input type="text" id="postal-code" class="form-control rounded-pill" placeholder="Postal Code" required>
+              </div>
+            </div>
+            
+            <div class="form-group row mb-3">
+              <label for="state" class="col-lg-2 col-form-label">State</label>
+              <div class="col-lg-5">
+                <input type="text" id="state" class="form-control rounded-pill" placeholder="State" required>
+              </div>
+            </div>
+            
+            <div class="form-group row mb-3">
+              <label for="city" class="col-lg-2 col-form-label">City</label>
+              <div class="col-lg-5">
+                <input type="text" id="city" class="form-control rounded-pill" placeholder="City" required>
+              </div>
+            </div>
+            
+            <div class="form-group row mb-3">
+              <label for="country" class="col-lg-2 col-form-label">Country</label>
+              <div class="col-lg-5">
+                <input type="text" id="country" class="form-control rounded-pill" placeholder="Country" required>
+              </div>
+            </div>
+            
+            <!-- Hobbies -->
+            <div class="form-group row mb-3">
+              <label class="col-lg-2 col-form-label">Hobbies</label>
+              <div class="col-lg-5">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="drawing" value="Drawing">
+                  <label class="form-check-label" for="drawing">Drawing</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="singing" value="Singing">
+                  <label class="form-check-label" for="singing">Singing</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="dancing" value="Dancing">
+                  <label class="form-check-label" for="dancing">Dancing</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="sketching" value="Sketching">
+                  <label class="form-check-label" for="sketching">Sketching</label>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Qualifications -->
+            <div class="form-group row mb-3">
+              <label class="col-lg-2 col-form-label">Qualification</label>
+              <div class="col-lg-9">
+                <div class="bg-custom table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Sl.No.</th>
+                        <th scope="col">Examination</th>
+                        <th scope="col">Board</th>
+                        <th scope="col">Percentage</th>
+                        <th scope="col">Year Of Passing</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Vous pouvez ajouter plus de lignes ici au besoin -->
+                      <tr>
+                        <th scope="row">1</th>
+                        <td><input type="text" class="form-control rounded-pill" placeholder="Examination" required></td>
+                        <td><input type="text" class="form-control rounded-pill" placeholder="Board" required></td>
+                        <td><input type="text" class="form-control rounded-pill" placeholder="Percentage" required></td>
+                        <td><input type="text" class="form-control rounded-pill" placeholder="Year Of Passing" required></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Départements -->
+            <div class="form-group row mb-3">
+              <label class="col-lg-2 col-form-label">Departments</label>
+              <div class="col-lg-5">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="department" id="cse" value="CSE">
+                  <label class="form-check-label" for="cse">CSE</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="department" id="eee" value="EEE">
+                  <label class="form-check-label" for="eee">EEE</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="department" id="civil" value="Civil">
+                  <label class="form-check-label" for="civil">Civil</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="department" id="textile" value="Textile">
+                  <label class="form-check-label" for="textile">Textile</label>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Bouton d'envoi -->
+            <div class="text-center">
+              <button type="button" class="btn btn-danger rounded-pill btn-lg">Send Now</button>
+            </div>
+          </form>
+        </div>
+        
+    <script async>
+      // Vérifie si le contenu du header est en cache
+      const cachedHeader = localStorage.getItem('cachedHeader');
+  
+      if (cachedHeader) {
+          // Si le contenu est en cache, l'injecte dans le conteneur
+          document.getElementById('header-container').innerHTML = cachedHeader;
+      } else {
+          // Sinon, charge le contenu du header depuis le serveur
+          fetch('header.html')
+              .then(response => response.text())
+              .then(content => {
+                  document.getElementById('header-container').innerHTML = content;
+                  // Stocke le contenu en cache
+                  localStorage.setItem('cachedHeader', content);
+              });
+      }
+  </script>
+  </body>
+</body>
+</html>

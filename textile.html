@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<head>
+    <title>Shyamoli Engineering University.</title> 
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>   
+    <script defer src="assets/fontawesome/js/all.js" async ></script>
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" media="print"
+    onload="this.media='all'">   
+    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css" media="print"
+    onload="this.media='all'"> 
+    <link id="theme-style" rel="stylesheet" href="assets/css/style.css" media="print"
+    onload="this.media='all'">
+</head> 
+
+<body class="home-page">
+    <div class="wrapper">
+        <!-- HEADER --> 
+        <div id="header-container"></div>
+
+  
+    
+        <!-- CONTENT --> 
+        <div class="content container">
+            <div class="page-wrapper">
+                <header class="page-heading clearfix">
+                    <h1 class="heading-title float-left">Textile Engineering</h1>
+                    <div class="breadcrumbs float-right">
+                        <ul class="breadcrumbs-list">
+                            <li class="breadcrumbs-label">You are here:</li>
+                            <li><a href="index-2.html">Home</a><i class="fas fa-angle-right"></i></li>
+                            <li><a href="courses.html">Course</a><i class="fas fa-angle-right"></i></li>
+                            <li class="current">Textile</li>
+                        </ul>
+                    </div>
+                </header> 
+                <div class="page-content">
+                    <div class="row page-row">
+                        <div class="course-wrapper col-lg-8 col-md-7">                         
+                            <article class="course-item">
+                             
+                                <div class="embed-responsive embed-responsive-16by9 mb-4 rounded">
+                                <!-- <iframe class="embed-responsive-item" width="750" height="422" src="https://www.youtube.com/embed/h9KXaahESas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+                                <iframe class="embed-responsive-item" width="750" height="422" src="https://www.youtube.com/embed/h9KXaahESas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="page-row box box-border rounded">
+                                    <ul class="list-unstyled no-margin-bottom">
+                                        <li><strong>Start Date:</strong> <em>01 Jan 2023</em></li>
+                                        <li><strong>Duration:</strong> <em>4 year</em></li>
+                                        <li><strong>Location:</strong> <em>In Campus</em></li>
+                                    </ul>
+                                </div>
+                                <div class="page-row">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum pellentesque urna. Phasellus adipiscing et massa et aliquam. Ut odio magna, interdum quis dolor non, tristique vestibulum nisi. Nam accumsan convallis venenatis. Nullam posuere risus odio, in interdum felis venenatis sagittis. Integer malesuada porta fermentum. Sed luctus nibh sed mi auctor imperdiet. Cras et sapien rhoncus, pulvinar dolor sed, tincidunt massa. Nullam fringilla mauris non risus ultricies viverra. Donec a turpis non lorem pulvinar posuere.</p>                     
+                            </article>                                              
+                        </div>
+                        <aside class="page-sidebar  col-lg-3 offset-lg-1 col-md-4 offset-md-1">     
+                            <section class="widget has-divider">
+                                <h3 class="title">Why SEU</h3>
+                                <p>Donec pulvinar arcu lacus, vel aliquam libero scelerisque a. Cras mi tellus, vulputate eu eleifend at, consectetur fringilla lacus. Nulla ut purus.</p>
+                                <a class="btn btn-danger rounded" href="registration.html"><i class="fas fa-arrow-circle-right"></i>Apply Now</a>
+                            </section>
+                            <section class="widget has-divider">
+                                <h3 class="title">Enquire about this course</h3>
+                                <p>Donec pulvinar arcu lacus, vel aliquam libero scelerisque a. Cras mi tellus, vulputate eu eleifend at, consectetur fringilla lacus. Nulla ut purus.</p>
+                                <p class="tel"><i class="fas fa-phone"></i>Tel: +8801712345678</p>
+                                <p class="email"><i class="fas fa-envelope"></i>Email: <a href="#">example@website.com</a></p>
+                            </section>              
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- FOOTER --> 
+   
+ <!-- Dans votre page principale -->
+<div id="footer-container"></div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js" async ></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js" async ></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js" async ></script> 
+    <script type="text/javascript" src="assets/plugins/back-to-top.js" async ></script>
+    <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js" async ></script>
+    <script type="text/javascript" src="assets/plugins/jflickrfeed/jflickrfeed.min.js" async ></script> 
+    <script type="text/javascript" src="assets/js/main.js" async ></script>          
+    <script async>
+        // Vérifie si le contenu du header est en cache
+        const cachedHeader = localStorage.getItem('cachedHeader');
+    
+        if (cachedHeader) {
+            // Si le contenu est en cache, l'injecte dans le conteneur
+            document.getElementById('header-container').innerHTML = cachedHeader;
+        } else {
+            // Sinon, charge le contenu du header depuis le serveur
+            fetch('header.html')
+                .then(response => response.text())
+                .then(content => {
+                    document.getElementById('header-container').innerHTML = content;
+                    // Stocke le contenu en cache
+                    localStorage.setItem('cachedHeader', content);
+                });
+        }
+    </script>
+    <script>
+        // Utilisation de fetch pour récupérer le contenu du fichier footer.html
+        fetch('footer.html')
+          .then(response => response.text())
+          .then(content => {
+            // Insérer le contenu dans le conteneur
+            document.getElementById('footer-container').innerHTML = content;
+          });
+      </script>
+      
+</body>
+</html> 
+
